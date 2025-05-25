@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    
+    <title>Home</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../images/logo.png" class="logo-img">
+            <span class="brits">Laptop</span><span class="laptop">Deluxe</span>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <span class="icon">&#9776;</span>
+        </div>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-item active">Home</a></li>
+                <li><a href="about.html" class="nav-item">About us</a></li>
+                <li><a href="contact.html" class="nav-item">Contact Us</a></li>
+                <li><a href="mission.html" class="nav-item">Mission & Vision</a></li>
+                <li><a href="profile.html" class="nav-item">Profile</a></li>
+                <li><a href="reviews.html" class="nav-item">Reviews</a></li>
+                <li><a href="services.html" class="nav-item">Services</a></li>
+                <li><a href="news.html" class="nav-item">News</a></li>
+                <li><a href="faqs.html" class="nav-item">FAQs</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-overlay">
+            <h1>Welcome to Laptop Deluxe</h1>
+            <p>Your trusted store for premium laptops and services</p>
+        </div>
+    </section>
+
+    <section class="featured-section">
+        <div class="featured-overlay">
+            <h1>Life is too short to waste repairing your computer in your spare time.</h1>
+            <button class="cta-button" onclick="location.href='services.html'">Shop Now</button>
+        </div>
+    </section>
+
+    <section class="featured-items">
+        <h2>Featured Items</h2>
+        <div class="items-container">
+            <div class="item">
+                <a href="shop.html">
+                    <img src="../images/gallery (7).jpg">
+                    <h3>NEC Laptop Good for Student's</h3>
+                    <p class="price">₱3,999</p>
+                    <p class="stock">Low stock.</p>
+                </a>
+            </div>
+            <div class="item">
+                <a href="shop1.html">
+                    <img src="../images/gallery (4).jpg">
+                    <h3>Asus i5 6th gen Good for Student's & Teacher</h3>
+                    <p class="price">₱4,999</p>
+                    <p class="stock">Low stock.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="store-container">
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3851.2204869705315!2d120.58718897588828!3d15.14623116348385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396f2426d60d40d%3A0xf7a2289b13322609!2s743%20Navarro%20St%2C%20Angeles%2C%20Pampanga!5e0!3m2!1sen!2sph!4v1748183613384!5m2!1sen!2sph" 
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    
+        <div class="store-info">
+            <h2>Store Details</h2>
+            <p>743 Navarro St. Brgy. Agapito Del Rosario, Angeles City</p>
+            <p>(+63) 931 834 2154</p>
+            <a href="https://www.google.com/maps/dir//743+Navarro+St,+Angeles,+Pampanga/@15.154083,120.6084826,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3396f2426d60d40d:0xf7a2289b13322609!2m2!1d120.5897639!2d15.146226?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" class="store-link">Get directions</a>
+    
+            <h3>Store Hours</h3>
+            <ul>
+                <li>Monday - Friday: 10:00 AM - 6:00 PM</li>
+                <li>Saturday: 11:00 AM - 5:00 PM</li>
+                <li>Sunday: Closed</li>
+            </ul>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 LaptopDeluxe. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="../script/script.js"></script>
+</body>
+</html>

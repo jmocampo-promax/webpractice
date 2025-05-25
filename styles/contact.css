@@ -1,0 +1,440 @@
+body {
+    background-color: white; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: black; 
+}
+
+.navbar {
+    width: 97.9%; 
+    margin: 0; 
+    padding: 10px 20px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex; 
+    align-items: center;
+    font-size: 50px;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.logo-img {
+    width: 80px; 
+    height: auto;
+    margin-right: 10px; 
+    animation: glowImg 2s infinite alternate;
+}
+
+.brits {
+    font-weight: bold;
+    color: white;
+}
+
+.laptop {
+    color: rgb(255, 0, 0); 
+}
+
+@keyframes glowEffect {
+    0% { text-shadow: 0 0 5px rgba(255, 255, 0, 0.8), 0 0 10px rgba(255, 255, 0, 0.5); }
+    50% { text-shadow: 0 0 15px rgba(255, 255, 0, 1), 0 0 30px rgba(255, 255, 0, 0.8); }
+    100% { text-shadow: 0 0 5px rgba(255, 255, 0, 0.8), 0 0 10px rgba(255, 255, 0, 0.5); }
+}
+
+.brits, .laptop {
+    font-weight: bold;
+    animation: glowEffect 2s infinite alternate; 
+    color: yellow; 
+}
+
+/* Glowing Animation for Logo Image */
+@keyframes glowImg {
+    0% { filter: drop-shadow(0px 0px 5px rgba(255, 255, 0, 0.8)); }
+    50% { filter: drop-shadow(0px 0px 15px rgba(255, 255, 0, 1)); }
+    100% { filter: drop-shadow(0px 0px 5px rgba(255, 255, 0, 0.8)); }
+}
+
+.nav-links-container {
+    display: flex;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; 
+    justify-content: flex-start; 
+    width: 100%;
+    padding: 0;
+    margin-right: 100px; 
+}
+
+.nav-links a {
+    flex-grow: 1; 
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.hero {
+    width: 100%;
+    height: 60vh; 
+    background-image: url('../images/bg_about.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+/* Header text styling */
+.hero-overlay h1 {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.hero-overlay p {
+    font-size: 30px;
+    max-width: 600px;
+}
+
+.menu-icon {
+    display: none; 
+}
+
+.menu-icon.open::before {
+    content: "✖"; 
+}
+
+.contact-section {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+    background-color: white;
+    padding: 40px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.contact-section h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-info {
+    flex: 1;
+    text-align: left;
+    font-size: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background-color: gray;
+}
+
+.success-message {
+    color: green;
+    font-size: 18px;
+    margin-top: 10px;
+    display: none;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.store-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 40px;
+    background-color: white;
+    margin-left: 8%;
+}
+
+
+.map-container {
+    flex: 1;
+    max-width: 50%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.store-info {
+    flex: 1;
+    max-width: 50%;
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.store-link {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+    color: blue;
+    text-decoration: underline;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: yellow;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: orange;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .logo {
+        display: flex; 
+        align-items: center;
+        font-size: 30px;
+        color: white;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .logo-img {
+        width: 80px; 
+        height: auto;
+        margin-right: 10px; 
+        animation: glowImg 2s infinite alternate;
+    }
+
+    .menu-icon {
+        display: block; 
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 30px;
+        cursor: pointer;
+        color: white;
+    }
+
+    .nav-links {
+        flex-direction: column; 
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block; 
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .nav-links-container {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        top: 5%;
+        left: 0;
+        background-color: black;
+        padding: 10px;
+    }
+
+    .hero {
+        height: 40vh; 
+        background-size: contain; 
+    }
+
+    .hero-overlay {
+        padding: 10px;
+    }
+
+    .hero-overlay h1 {
+        font-size: 28px; 
+    }
+
+    .hero-overlay p {
+        font-size: 16px; 
+        max-width: 90%;
+    }
+
+    .nav-links-container.show {
+        display: flex;
+    }
+
+    .menu-icon.open .icon {
+        content: "✖"; 
+    }
+
+    .contact-container {
+        flex-direction: column;
+        text-align: left;
+        padding: 20px; /* Add equal padding */
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 90%; /* Make both sections equal in width */
+        margin: 0 auto; /* Center-align */
+        padding: 15px; /* Keep equal spacing */
+    }
+
+    .contact-container {
+        flex-direction: column;
+        text-align: left;
+        padding: 20px;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 90%;
+        margin: 0 auto;
+        padding: 15px;
+        text-align: left;
+    }
+
+    .contact-info p {
+        text-align: left;
+    }
+
+    .contact-form {
+        float: left;
+    }
+
+    .success-message {
+        text-align: left; /* Align message to the left */
+        font-size: 18px;
+        color: green;
+        margin-top: 10px;
+        display: none;
+    }
+
+    .contact-form button {
+        font-size: 18px;
+    }
+
+    .store-container {
+        flex-direction: column; 
+        align-items: center;
+        margin-left: 0; 
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .map-container{
+        max-width: 100%; 
+        text-align: center; 
+    }
+
+    .store-info {
+        font-size: 18px; 
+    }
+
+    .footer {
+        padding: 15px 10px; 
+        font-size: 14px; 
+    }
+
+    .footer-content {
+        flex-direction: column; 
+    }
+
+    .footer-links {
+        flex-direction: column; 
+        gap: 10px;
+    }
+}
+
+.nav-links-container.show {
+    display: flex; 
+}

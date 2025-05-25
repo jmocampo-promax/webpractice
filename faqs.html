@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/faqs.css">
+    
+    <title>FAQ's</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../images/logo.png" class="logo-img">
+            <span class="brits">Laptop</span><span class="laptop">Deluxe</span>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <span class="icon">&#9776;</span>
+        </div>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-item">Home</a></li>
+                <li><a href="about.html" class="nav-item">About us</a></li>
+                <li><a href="contact.html" class="nav-item">Contact Us</a></li>
+                <li><a href="mission.html" class="nav-item">Mission & Vision</a></li>
+                <li><a href="profile.html" class="nav-item">Profile</a></li>
+                <li><a href="reviews.html" class="nav-item">Reviews</a></li>
+                <li><a href="services.html" class="nav-item">Services</a></li>
+                <li><a href="news.html" class="nav-item">News</a></li>
+                <li><a href="faqs.html" class="nav-item active">FAQs</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(0)">What is Laptop Deluxe?</button>
+            <div class="faq-answer" data-full-text="Laptop Deluxe is a high-performance laptop store that offers premium and reliable machines for professionals and gamers."></div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(1)">Do you offer warranties?</button>
+            <div class="faq-answer" data-full-text="Yes, all our laptops come with a standard warranty. Additional warranty extensions are also available."></div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(2)">How long does shipping take?</button>
+            <div class="faq-answer" data-full-text="Shipping typically takes 3-5 business days for local deliveries and up to 10 days for international orders."></div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(3)">Can I return a laptop if I’m not satisfied?</button>
+            <div class="faq-answer" data-full-text="Yes! We have a 14-day return policy, as long as the laptop is in its original condition."></div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(4)">What payment methods do you accept?</button>
+            <div class="faq-answer" data-full-text="We accept credit cards, PayPal, and bank transfers for all purchases."></div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(5)">Do you offer laptop customization?</button>
+            <div class="faq-answer" data-full-text="Yes! We can customize certain laptops based on RAM, storage, and processing power to fit your needs."></div>
+        </div>
+    
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(6)">Do you sell accessories?</button>
+            <div class="faq-answer" data-full-text="Yes, we offer laptop accessories such as chargers, bags, cooling pads, and external hard drives."></div>
+        </div>
+    
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(7)">Are your laptops brand new or refurbished?</button>
+            <div class="faq-answer" data-full-text="We primarily sell brand-new laptops, but we do have certified refurbished models available at discounted prices."></div>
+        </div>
+    
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(8)">Do you offer bulk discounts?</button>
+            <div class="faq-answer" data-full-text="Yes! If you’re purchasing multiple laptops, contact us for special bulk pricing options."></div>
+        </div>
+    
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(9)">Where is your physical store located?</button>
+            <div class="faq-answer" data-full-text="743 Navarro St. Brgy. Agapito Del Rosario, Angeles City"></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 LaptopDeluxe. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../script/faq.js"></script>
+</body>
+</html>
